@@ -34,17 +34,17 @@
 
 To interact with or deploy this contract, you need tools like [Truffle](https://www.trufflesuite.com/) or [Hardhat](https://hardhat.org/):
 
-```bash
+
 npm install -g truffle
 truffle init
 truffle migrate --network <your_network>
 
-```bash
+
 npm install --save-dev hardhat
 npx hardhat
 
 
-```bash
+
 const { expect } = require("chai");
 
 describe("AdvancedERC20", function() {
