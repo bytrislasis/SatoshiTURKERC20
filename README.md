@@ -34,10 +34,11 @@
 
 To interact with or deploy this contract, you need tools like [Truffle](https://www.trufflesuite.com/) or [Hardhat](https://hardhat.org/):
 
-
+```bash
 npm install -g truffle
 truffle init
 truffle migrate --network <your_network>
+
 
 
 npm install --save-dev hardhat
@@ -46,7 +47,6 @@ npx hardhat
 
 
 const { expect } = require("chai");
-
 describe("AdvancedERC20", function() {
   it("Should return the total supply after minting", async function() {
     const [owner] = await ethers.getSigners();
@@ -58,5 +58,6 @@ describe("AdvancedERC20", function() {
     expect(await hardhatToken.totalSupply()).to.equal(initialSupply.add(500));
   });
 });
+
 
 
